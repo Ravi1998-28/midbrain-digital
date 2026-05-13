@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Midbrain Digital</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+  <style>
+    * {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #050505;
+      color: white;
+      overflow-x: hidden;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .glass {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      backdrop-filter: blur(10px);
+    }
+
+    .gradient-text {
+      background: linear-gradient(to right, #d9ff7a, #89ffbc);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .section-title {
+      font-size: 3rem;
+      font-weight: 800;
+      margin-bottom: 20px;
+    }
+
+    .card-hover {
+      transition: 0.4s ease;
+    }
+
+    .card-hover:hover {
+      transform: translateY(-8px);
+      border-color: #d9ff7a;
+      box-shadow: 0px 10px 40px rgba(187,255,0,0.12);
+    }
+
+    .timeline-line {
+      height: 4px;
+      background: #d9ff7a;
+      position: absolute;
+      top: 32px;
+      left: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="fixed top-0 left-0 w-full z-50 bg-black/70 backdrop-blur-lg border-b border-gray-900">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-5">
+      <h1 class="text-2xl font-bold gradient-text">Midbrain Digital</h1>
+
+      <div class="hidden md:flex gap-8 text-sm font-medium">
+        <a href="#home" class="hover:text-lime-300">Home</a>
+        <a href="#vision" class="hover:text-lime-300">Vision</a>
+        <a href="#verticals" class="hover:text-lime-300">Verticals</a>
+        <a href="#impact" class="hover:text-lime-300">Impact</a>
+        <a href="#evolution" class="hover:text-lime-300">Evolution</a>
+        <a href="#contact" class="hover:text-lime-300">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home" class="min-h-screen flex items-center px-6 pt-32">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-20 items-center">
+
+      <div data-aos="fade-right">
+        <h1 class="text-5xl md:text-7xl font-black leading-tight mb-6">
+          Midbrain <span class="gradient-text">Digital</span>
+        </h1>
+
+        <p class="text-2xl text-gray-200 leading-10 mb-8">
+          The Core of Creative Intelligence: Engineering Content, Discovering Talent, Empowering Minds.
+        </p>
+
+        <p class="text-lime-300 text-xl mb-10">
+          Elevating Influence... Empowering Minds...
+        </p>
+
+        <a href="#verticals" class="bg-lime-300 text-black px-8 py-4 rounded-full font-bold hover:scale-105 transition inline-block">
+          Explore Our Ecosystem
+        </a>
+      </div>
+
+      <div data-aos="zoom-in">
+        <img
+          src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=1200&auto=format&fit=crop"
+          class="rounded-[40px] border border-gray-800 shadow-2xl"
+        />
+      </div>
+    </div>
+  </section>
+
+
+  <!-- VISION -->
+  <section id="vision" class="py-28 px-6 border-t border-gray-900">
+    <div class="max-w-7xl mx-auto">
+
+      <div data-aos="fade-up">
+        <h2 class="section-title gradient-text">Our Vision</h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-20 items-center mt-14">
+
+        <div>
+          <p class="text-gray-300 text-xl leading-10 mb-10">
+            To build a legacy of transformation by bridging the gap between raw potential and professional mastery.
+          </p>
+
+          <div class="grid grid-cols-2 gap-6">
+            <div class="glass rounded-3xl p-8 text-center card-hover">
+              <div class="text-5xl mb-4">🎬</div>
+              <h3 class="text-2xl font-bold text-lime-300">Media</h3>
+            </div>
+
+            <div class="glass rounded-3xl p-8 text-center card-hover">
+              <div class="text-5xl mb-4">🧠</div>
+              <h3 class="text-2xl font-bold text-lime-300">Mentorship</h3>
+            </div>
+
+            <div class="glass rounded-3xl p-8 text-center card-hover">
+              <div class="text-5xl mb-4">💡</div>
+              <h3 class="text-2xl font-bold text-lime-300">Innovation</h3>
+            </div>
+
+            <div class="glass rounded-3xl p-8 text-center card-hover">
+              <div class="text-5xl mb-4">🚀</div>
+              <h3 class="text-2xl font-bold text-lime-300">Mindset</h3>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <img
+            src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop"
+            class="rounded-[40px]"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FOUNDER -->
+  <section class="py-28 px-6 bg-[#090909] border-t border-gray-900">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-20 items-center">
+
+      <div data-aos="fade-right">
+        <h2 class="section-title gradient-text">Meet The Founder</h2>
+
+        <div class="space-y-8 text-gray-300 text-lg leading-9">
+          <p>
+            Founded by a professional engineer with 17+ years of industry experience and operational leadership.
+          </p>
+
+          <p>
+            Our approach is built on a foundation of discipline, technical mastery, and strategic growth tailored for the digital age.
+          </p>
+
+          <p>
+            Worked with multinationals like Suzuki Group, Fiat Group, CK Birla Group, and JTEKT Group.
+          </p>
+        </div>
+      </div>
+
+      <div data-aos="fade-left">
+        <img
+          src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1200&auto=format&fit=crop"
+          class="rounded-[40px]"
+        />
+      </div>
+    </div>
+  </section>
+
+
+  <!-- VERTICALS -->
+  <section id="verticals" class="py-28 px-6 border-t border-gray-900">
+    <div class="max-w-7xl mx-auto">
+
+      <div class="text-center mb-20">
+        <h2 class="section-title gradient-text">Our Verticals</h2>
+        <p class="text-gray-400 text-lg max-w-3xl mx-auto">
+          A specialized ecosystem designed to connect human potential with digital excellence.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+        <div class="glass rounded-3xl p-8 card-hover">
+          <div class="text-5xl mb-5">📱</div>
+          <h3 class="text-2xl font-bold text-lime-300 mb-4">Social Media</h3>
+          <p class="text-gray-400 leading-8">
+            Strategic management, dynamic content creation, and real-time engagement.
+          </p>
+        </div>
+
+        <div class="glass rounded-3xl p-8 card-hover">
+          <div class="text-5xl mb-5">🎙️</div>
+          <h3 class="text-2xl font-bold text-lime-300 mb-4">Studioz</h3>
+          <p class="text-gray-400 leading-8">
+            Premium podcast and multimedia storytelling production.
+          </p>
+        </div>
+
+        <div class="glass rounded-3xl p-8 card-hover">
+          <div class="text-5xl mb-5">⭐</div>
+          <h3 class="text-2xl font-bold text-lime-300 mb-4">Rysyng Star</h3>
+          <p class="text-gray-400 leading-8">
+            Talent identification and scouting for emerging creators.
+          </p>
+        </div>
+
+        <div class="glass rounded-3xl p-8 card-hover">
+          <div class="text-5xl mb-5">🎓</div>
+          <h3 class="text-2xl font-bold text-lime-300 mb-4">Masterminds</h3>
+          <p class="text-gray-400 leading-8">
+            Corporate leadership and transformation workshops.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- SOCIAL MEDIA MANAGEMENT -->
+  <section class="py-28 px-6 bg-[#090909] border-t border-gray-900">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-20 items-center">
+
+      <div>
+        <h2 class="section-title gradient-text">Social Media Management</h2>
+
+        <h3 class="text-3xl font-bold text-lime-300 mb-8">Digital Pulse</h3>
+
+        <div class="space-y-8 text-gray-300 text-lg leading-9">
+          <p>
+            We don't just post content; we engineer influence.
+          </p>
+
+          <p>
+            Our SMM vertical focuses on data-driven strategies that ensure your brand is not just seen, but heard.
+          </p>
+        </div>
+
+        <div class="mt-10 space-y-4 text-lg">
+          <div>✅ Platform-specific Growth Strategy</div>
+          <div>✅ Viral Content Engineering</div>
+          <div>✅ Community & Sentiment Analysis</div>
+          <div>✅ Social Media Management</div>
+        </div>
+      </div>
+
+      <div>
+        <img
+          src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop"
+          class="rounded-[40px]"
+        />
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ECOSYSTEM -->
+  <section class="py-28 px-6 border-t border-gray-900">
+    <div class="max-w-7xl mx-auto overflow-x-auto">
+
+      <h2 class="section-title gradient-text mb-14">Ecosystem Capabilities</h2>
+
+      <table class="w-full glass rounded-3xl overflow-hidden">
+        <thead class="bg-lime-200 text-black">
+          <tr>
+            <th class="p-6 text-left">Vertical</th>
+            <th class="p-6 text-left">Core Focus</th>
+            <th class="p-6 text-left">Target Audience</th>
+            <th class="p-6 text-left">Key Outcome</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr class="border-t border-gray-800">
+            <td class="p-6">Social Media</td>
+            <td class="p-6">Content Strategy</td>
+            <td class="p-6">Direct Consumer</td>
+            <td class="p-6">Engagement & Sales</td>
+          </tr>
+
+          <tr class="border-t border-gray-800">
+            <td class="p-6">Midbrain Studioz</td>
+            <td class="p-6">Audio Production</td>
+            <td class="p-6">Creators / Brands</td>
+            <td class="p-6">Thought Leadership</td>
+          </tr>
+
+          <tr class="border-t border-gray-800">
+            <td class="p-6">Rysyng Star</td>
+            <td class="p-6">Talent Scouting</td>
+            <td class="p-6">Emerging Talent</td>
+            <td class="p-6">Legacy Launch</td>
+          </tr>
+
+          <tr class="border-t border-gray-800">
+            <td class="p-6">Masterminds</td>
+            <td class="p-6">Training</td>
+            <td class="p-6">Corporates</td>
+            <td class="p-6">Mindset, leadership & attitude</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+
+  <!-- MASTERMINDS -->
+  <section class="py-28 px-6 bg-[#090909] border-t border-gray-900">
+    <div class="max-w-7xl mx-auto">
+
+      <h2 class="section-title gradient-text">Midbrain Masterminds</h2>
+
+      <div class="space-y-5 text-2xl font-semibold text-lime-200 mb-16">
+        <div>☑ Presentation less Sessions</div>
+        <div>☑ 100% lively engagement</div>
+        <div>☑ Long-term effectiveness</div>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-10">
+
+        <div class="glass rounded-3xl p-10 card-hover">
+          <h3 class="text-3xl font-bold text-lime-300 mb-6">Corporate Training</h3>
+
+          <p class="text-gray-300 text-lg leading-10">
+            Modules focusing on mental wellbeing, productivity enhancement, work-life balance, stress management and emotional intelligence.
+          </p>
+        </div>
+
+        <div class="glass rounded-3xl p-10 card-hover">
+          <h3 class="text-3xl font-bold text-lime-300 mb-6">Leadership Edge</h3>
+
+          <p class="text-gray-300 text-lg leading-10">
+            Workshops designed for middle and senior management to navigate hybrid work, digital transformation and leadership essentials.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- IMPACT -->
+  <section id="impact" class="py-28 px-6 border-t border-gray-900">
+    <div class="max-w-7xl mx-auto">
+
+      <h2 class="section-title gradient-text text-center mb-20">The Impact at a Glance</h2>
+
+      <div class="grid md:grid-cols-3 gap-10">
+
+        <div class="glass rounded-3xl p-12 text-center card-hover">
+          <div class="text-6xl mb-5">🚀</div>
+          <h3 class="text-6xl font-black text-lime-300 mb-3">20+</h3>
+          <p class="uppercase tracking-widest text-gray-400">Brands Managed</p>
+        </div>
+
+        <div class="glass rounded-3xl p-12 text-center card-hover">
+          <div class="text-6xl mb-5">🎙️</div>
+          <h3 class="text-6xl font-black text-lime-300 mb-3">15+</h3>
+          <p class="uppercase tracking-widest text-gray-400">Podcasts Produced</p>
+        </div>
+
+        <div class="glass rounded-3xl p-12 text-center card-hover">
+          <div class="text-6xl mb-5">👥</div>
+          <h3 class="text-6xl font-black text-lime-300 mb-3">150+</h3>
+          <p class="uppercase tracking-widest text-gray-400">Professionals Trained</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- GROWTH -->
+  <section class="py-28 px-6 bg-[#090909] border-t border-gray-900">
+    <div class="max-w-7xl mx-auto">
+
+      <h2 class="section-title gradient-text mb-20">Vertical Contribution & Growth</h2>
+
+      <div class="space-y-10">
+
+        <div>
+          <div class="flex justify-between mb-3">
+            <span>Social Media</span>
+            <span>85% Reach</span>
+          </div>
+
+          <div class="w-full bg-gray-800 rounded-full h-8 overflow-hidden">
+            <div class="bg-gradient-to-r from-lime-200 to-cyan-400 h-8 w-[85%]"></div>
+          </div>
+        </div>
+
+        <div>
+          <div class="flex justify-between mb-3">
+            <span>Studioz</span>
+            <span>60% Authority</span>
+          </div>
+
+          <div class="w-full bg-gray-800 rounded-full h-8 overflow-hidden">
+            <div class="bg-gradient-to-r from-lime-200 to-cyan-400 h-8 w-[60%]"></div>
+          </div>
+        </div>
+
+        <div>
+          <div class="flex justify-between mb-3">
+            <span>Rysyng Star</span>
+            <span>45% Influence</span>
+          </div>
+
+          <div class="w-full bg-gray-800 rounded-full h-8 overflow-hidden">
+            <div class="bg-gradient-to-r from-lime-200 to-cyan-400 h-8 w-[45%]"></div>
+          </div>
+        </div>
+
+        <div>
+          <div class="flex justify-between mb-3">
+            <span>Masterminds</span>
+            <span>75% Efficiency</span>
+          </div>
+
+          <div class="w-full bg-gray-800 rounded-full h-8 overflow-hidden">
+            <div class="bg-gradient-to-r from-lime-200 to-cyan-400 h-8 w-[75%]"></div>
+          </div>
+        </div>
+      </div>
+
+      <p class="text-center text-gray-400 mt-14 text-xl italic">
+        Metrics represent the average impact score across our client portfolio.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- EVOLUTION -->
+  <section id="evolution" class="py-28 px-6 border-t border-gray-900">
+    <div class="max-w-7xl mx-auto relative">
+
+      <h2 class="section-title gradient-text mb-24">The Evolution</h2>
+
+      <div class="hidden md:block timeline-line"></div>
+
+      <div class="grid md:grid-cols-4 gap-12 relative">
+
+        <div class="text-center relative z-10">
+          <div class="w-16 h-16 bg-black border-4 border-lime-300 rounded-full mx-auto mb-8 flex items-center justify-center text-lime-300 font-bold text-xl">
+            1
+          </div>
+
+          <h3 class="text-3xl font-bold text-lime-300 mb-5">Inception</h3>
+          <p class="text-gray-300 text-lg leading-8">
+            Founding of Midbrain Digital and SMM wing.
+          </p>
+        </div>
+
+        <div class="text-center relative z-10">
+          <div class="w-16 h-16 bg-black border-4 border-lime-300 rounded-full mx-auto mb-8 flex items-center justify-center text-lime-300 font-bold text-xl">
+            2
+          </div>
+
+          <h3 class="text-3xl font-bold text-lime-300 mb-5">Expansion</h3>
+          <p class="text-gray-300 text-lg leading-8">
+            Launch of Studioz and Masterminds.
+          </p>
+        </div>
+
+        <div class="text-center relative z-10">
+          <div class="w-16 h-16 bg-black border-4 border-lime-300 rounded-full mx-auto mb-8 flex items-center justify-center text-lime-300 font-bold text-xl">
+            3
+          </div>
+
+          <h3 class="text-3xl font-bold text-lime-300 mb-5">Discovery</h3>
+          <p class="text-gray-300 text-lg leading-8">
+            Rysyng Star talent scout platform goes live.
+          </p>
+        </div>
+
+        <div class="text-center relative z-10">
+          <div class="w-16 h-16 bg-black border-4 border-lime-300 rounded-full mx-auto mb-8 flex items-center justify-center text-lime-300 font-bold text-xl">
+            4
+          </div>
+
+          <h3 class="text-3xl font-bold text-lime-300 mb-5">Global Hub</h3>
+          <p class="text-gray-300 text-lg leading-8">
+            Integrating AI-driven training for Masterminds.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-28 px-6 bg-[#090909] border-t border-gray-900">
+    <div class="max-w-4xl mx-auto text-center">
+
+      <h2 class="text-6xl font-black gradient-text mb-8">Questions?</h2>
+
+      <p class="text-gray-300 text-2xl mb-14">
+        Join the Midbrain Ecosystem Today.
+      </p>
+
+      <div class="flex flex-col gap-6 text-xl">
+        <p>🌐 midbraindigital.in</p>
+        <p>✉️ cc@midbraindigital.in</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="py-8 border-t border-gray-900 text-center text-gray-500">
+    © 2026 Midbrain Digital. All Rights Reserved.
+  </footer>
+
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+
+</body>
+</html>
