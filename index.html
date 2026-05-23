@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+</script>
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -68,20 +69,48 @@
 <body>
 
   <!-- NAVBAR -->
-  <nav class="fixed top-0 left-0 w-full z-50 bg-black/70 backdrop-blur-lg border-b border-gray-900">
-    <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-5">
-      <h1 class="text-2xl font-bold gradient-text">Midbrain Digital</h1>
+  <!-- NAVBAR -->
+<nav class="fixed top-0 left-0 w-full z-50 bg-black/70 backdrop-blur-lg border-b border-gray-900">
+  <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-5">
 
-      <div class="hidden md:flex gap-8 text-sm font-medium">
-        <a href="#home" class="hover:text-lime-300">Home</a>
-        <a href="#vision" class="hover:text-lime-300">Vision</a>
-        <a href="#verticals" class="hover:text-lime-300">Verticals</a>
-        <a href="#impact" class="hover:text-lime-300">Impact</a>
-        <a href="#evolution" class="hover:text-lime-300">Evolution</a>
-        <a href="#contact" class="hover:text-lime-300">Contact</a>
-      </div>
+    <h1 class="text-2xl font-bold gradient-text">
+      Midbrain Digital
+    </h1>
+
+    <!-- DESKTOP MENU -->
+    <div class="hidden md:flex gap-8 text-sm font-medium">
+      <a href="#home" class="hover:text-lime-300">Home</a>
+      <a href="#vision" class="hover:text-lime-300">Vision</a>
+      <a href="#verticals" class="hover:text-lime-300">Verticals</a>
+      <a href="#impact" class="hover:text-lime-300">Impact</a>
+      <a href="#evolution" class="hover:text-lime-300">Evolution</a>
+      <a href="#contact" class="hover:text-lime-300">Contact</a>
     </div>
-  </nav>
+
+    <!-- MOBILE MENU BUTTON -->
+    <button
+      id="menu-btn"
+      class="md:hidden flex flex-col gap-1"
+    >
+      <span class="w-7 h-[3px] bg-white rounded"></span>
+      <span class="w-7 h-[3px] bg-white rounded"></span>
+      <span class="w-7 h-[3px] bg-white rounded"></span>
+    </button>
+  </div>
+
+  <!-- MOBILE MENU -->
+  <div
+    id="mobile-menu"
+    class="hidden md:hidden flex flex-col gap-6 px-6 pb-6 text-sm font-medium bg-black border-t border-gray-800"
+  >
+    <a href="#home" class="hover:text-lime-300">Home</a>
+    <a href="#vision" class="hover:text-lime-300">Vision</a>
+    <a href="#verticals" class="hover:text-lime-300">Verticals</a>
+    <a href="#impact" class="hover:text-lime-300">Impact</a>
+    <a href="#evolution" class="hover:text-lime-300">Evolution</a>
+    <a href="#contact" class="hover:text-lime-300">Contact</a>
+  </div>
+</nav>
 
   <!-- HERO -->
   <section id="home" class="min-h-screen flex items-center px-6 pt-32">
@@ -550,4 +579,12 @@
   </script>
 
 </body>
+<script>
+  const menuBtn = document.getElementById("menu-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+</script>
 </html>
